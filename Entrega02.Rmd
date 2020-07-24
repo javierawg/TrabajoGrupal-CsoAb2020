@@ -3,8 +3,8 @@ title: "Satisfacción con la economía nacional y percepción de desigualdad en 
 author: "Javiera Wömpner García"
 date: "21-06-2020"
 output: html_document
-bibliography: Bibliografia_entrega01.bib
-csl: apa.csl
+bibliography: Input/bib/Bibliografia_entrega01.bib
+csl: Input/bib/apa.csl
 ---
 
 # Resumen
@@ -42,7 +42,7 @@ En la siguiente tabla se puede observar las tendencias centrales y de distribuci
 pacman::p_load(dplyr, sjlabelled, stargazer, sjmisc, summarytools, kableExtra, sjPlot, corrplot, ggplot2)
 
 #Cargar base de datos
-load("C:/Users/Alex/Desktop/Escritorio/Uchile/Sociología/5° Semestre/Ciencia Social Abierta. Herramientas para la reproducibilidad, colaboración y comunicación de la Inv. Social/Evaluaciones/Entrega 01/Desiguales_procesada.RData")
+load("Input/data/proc/Desiguales_procesada.RData")
 
 #Generar Tabla descriptiva
 sjmisc::descr(Desiguales_procesada,show = c("label","range","median","mean","sd","NA.prc","n"))%>% kable(.,"markdown")
