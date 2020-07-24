@@ -3,7 +3,7 @@ title: "Satisfacción con la economía nacional y percepción de desigualdad en 
 author: "Javiera Wömpner García"
 date: "21-06-2020"
 output: html_document
-bibliography: Input/bib/Bibliografia_entrega01.bib
+bibliography: Input/bib/bibliografia.bib
 csl: Input/bib/apa.csl
 ---
 
@@ -142,5 +142,10 @@ Tanto en la correlación como en la regresión de ambas variables se muestra que
 Pese a no haber encontrado resultados significativos, la percepción de desigualdad de los individuos de una sociedad sigue siendo fundamental en los estudios sociales, y sería interesante analizar su relación no con la satisfacción económica nacional, sino con la personal. @cereceda-marambioSatisfaccionConDemocracia2017a, tratando de perfeccionar el modelo existente para analizar la satisfacción a la democracia, encontraron que la satisfacción de la economía personal no resulta significativa en el modelo, asociando este suceso a una posible explicación meritocrática, provocando que los sujetos separasen el modelo macroeconómico a las experiencias individuales de la economía. Debido a que la desigualdad tiende a ser justificada por aquel mismo discurso meritocrático, ambos fenómenos podrían compartir un mismo origen, resultando interesante en materias de legitimación que tanto un suceso experiencial como otro de carácter perceptivo y societal sean provocados por el mismo discurso que entraña las lógicas que sujetan y reproducen el sistema hegemónico actual.
 
 
-# Bibliografía
+# Info
 
+```{r, echo=FALSE}
+sessionInfo()
+```
+
+# Bibliografía
