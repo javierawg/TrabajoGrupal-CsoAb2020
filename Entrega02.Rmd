@@ -1,10 +1,10 @@
 ---
 title: "Satisfacción con la economía nacional y percepción de desigualdad en Chile"
-author: "Javiera Wömpner García"
+author: "Valentina Astete, Esteban Hernández, Alberto Reyes, Javiera Wömpner"
 date: "21-06-2020"
 output: html_document
-bibliography: Input/bib/bibliografia.bib
-csl: Input/bib/apa.csl
+bibliography: input/bib/bibliografia.bib
+csl: input/bib/apa.csl
 ---
 
 # Resumen
@@ -39,10 +39,10 @@ En la siguiente tabla se puede observar las tendencias centrales y de distribuci
 ```{r, echo=FALSE}
 #Tabla 01
 
-pacman::p_load(dplyr, sjlabelled, stargazer, sjmisc, summarytools, kableExtra, sjPlot, corrplot, ggplot2)
+pacman::p_load(dplyr, sjlabelled, stargazer, sjmisc, summarytools, kableExtra, sjPlot, corrplot, ggplot2, sessioninfo)
 
 #Cargar base de datos
-load("Input/data/proc/Desiguales_procesada.RData")
+load("input/data/proc/Desiguales_procesada.RData")
 
 #Generar Tabla descriptiva
 sjmisc::descr(Desiguales_procesada,show = c("label","range","median","mean","sd","NA.prc","n"))%>% kable(.,"markdown")
