@@ -2,7 +2,7 @@
 pacman::p_load(dplyr, sjlabelled, stargazer, sjmisc, summarytools, kableExtra, sjPlot, corrplot, ggplot2, webshot)
 
 #Cargar base de datos 
-load("C:/Users/Alex/Desktop/Escritorio/Uchile/Sociología/5° Semestre/Estadística Multivariada/Informe 01/Código de Análisis/Desiguales_procesada.RData")
+load("input/data/proc/Desiguales_procesada.RData")
 
 #Retirar casos perdidos NA
 Desigualesproc_original <-Desiguales_procesada
@@ -12,7 +12,7 @@ Desigualesproc_sinna <-na.omit(Desiguales_procesada)
 dim(Desigualesproc_sinna)
 Desigualesproc_sinna <-sjlabelled::copy_labels(Desigualesproc_sinna,Desigualesproc_original)
 
-#Coef. de correlación
+#Coef. de correlacion
 sjt.corr(Desigualesproc_sinna,
          triangle = "lower")
       #Arreglar etiquetas, pues tabla no lee los tildes.
@@ -22,7 +22,7 @@ sjt.corr(Desigualesproc_sinna,
 CR <- cor(Desigualesproc_sinna)
 plot_scatter(Desigualesproc_sinna, satisfaccioneconomia, percepciondesigualdad)
 
-#Modelo de regresión
+#Modelo de regresion
 g2=ggplot(Desigualesproc_sinna, aes(x=satisfaccioneconomia, y=percepciondesigualdad)) +
   geom_point() +
     geom_smooth(method = lm, se=FALSE)
@@ -62,7 +62,7 @@ ss_err<-sum((Desigualesproc_sinna$percepciondesigualdad - Desigualesproc_sinna$e
 
 summary(lm(percepciondesigualdad~satisfaccioneconomia, data = Desigualesproc_sinna))$r.squared
 
-#Gráfico 
+#Grafico 
 ggplot(Desigualesproc_sinna, aes(x=satisfaccioneconomia, y=percepciondesigualdad))+
   geom_smooth(method="lm", se=FALSE, color="lightgrey") + 
   geom_segment(aes(xend=satisfaccioneconomia, yend=estimado), alpha = .2) + 
