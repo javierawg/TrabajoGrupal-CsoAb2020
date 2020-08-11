@@ -11,5 +11,4 @@ navbar:
 output:
   html_document:
       theme: simplex
-      css= 'styles.css'
-      
+      css: 'styles.css'
