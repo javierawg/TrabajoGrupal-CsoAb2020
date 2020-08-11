@@ -1,0 +1,11 @@
+
+## Esta es la pagina del proyecto "Satisfacción con la economía nacional y percepción de desigualdad en Chile"
+
+
+### Autores
+
+El presente artículo de investigación cuantitativa fue desarrollado principalemente por Javiera Wömpner García para la primera evaluación del curso de Estadística Multivaríada del Departamento de Sociología 2020 (pregrado) de la Universidad de Chile. Sin embargo, la autoría del formato reproducible y  adaptación web es de Valentina Astete, Esteban Hernández, Alberto Reyes y Javiera Wömpner. 
+
+### Reproducibilidad & Documentación
+
+El repositorio del proyecto se encuentra en Github, estructurado acorde al [protocolo de reproducibilidad IPO](https://juancarloscastillo.github.io/ipo/).

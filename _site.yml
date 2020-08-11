@@ -1,0 +1,15 @@
+name: "Satisfacción con la economía nacional y percepción de desigualdad en Chile"
+output_dir: "."
+navbar:
+  title: "Satisfacción con la economía nacional y percepción de desigualdad en Chile"
+  left:
+    - text: "Documento"
+      href: TrabajoGrupal.html
+  right:
+    - icon: fa-github-fa-lg
+      href: https://github.com/javierawg/TrabajoGrupal-CsoAb2020
+output:
+  html_document:
+      theme: simplex
+      css= 'styles.css'
+      
